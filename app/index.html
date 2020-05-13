@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link
+			rel="stylesheet"
+			href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1 class="text-center">
+				Todos
+			</h1>
+
+			<div class="text-center">
+				<form class="d-flex align-items-center justify-content-center">
+					<div class="form-group">
+						<input
+							type="text"
+							name="todo"
+							placeholder="Todo..."
+							required
+							class="form-control todo-input"
+						/>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary">
+							<i class="fa fa-plus"></i>
+						</button>
+					</div>
+				</form>
+				<p class="error-output"></p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="todos"></div>
+		</div>
+
+		<script src="./js/file.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
